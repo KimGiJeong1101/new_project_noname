@@ -1,54 +1,54 @@
-# 🚀 Legacy to Modern: Enterprise Web Renewal Project
+# Enterprise Web Modernization Project
 
-실무에서 접하는 레거시 기술 스택의 한계를 극복하고, **더 높은 생산성과 안정성을 갖춘 모던 풀스택 아키텍처**를 연구하는 개인 학습 및 실습 저장소입니다.
+실무 레거시 기술 스택의 한계를 보완하고, 생산성과 안정성이 높은 모던 풀스택 아키텍처를 연구하는 프로젝트입니다.
 
-## 📌 Project Overview
-- **Background**: JSP, MyBatis, XPlatform 기반의 환경에서 겪는 유지보수의 어려움을 현대적 기술로 해결하고자 함
-- **Goal**: Spring Boot 3와 React(TS)를 활용하여 기업용 시스템의 현대적 리뉴얼 프로토타입 구축
-- **Core Values**: 
-  - **Type Safety**: TypeScript와 Querydsl을 통한 컴파일 단계 에러 방지
-  - **Efficiency**: JPA를 활용한 객체 지향적 데이터 설계 및 개발 속도 향상
-  - **Modern UI**: 컴포넌트 기반의 재사용 가능한 프론트엔드 구조 설계
+## 1. Project Overview
+- **배경**: JSP, MyBatis, XPlatform 기반 환경의 유지보수 제약을 최신 기술로 해결하고자 함
+- **목표**: Spring Boot 3와 React(TS)를 활용한 기업용 시스템 리뉴얼 프로토타입 구축
+- **핵심 가치**: 
+  - TypeScript를 통한 타입 안정성 확보
+  - JPA 기반의 객체 지향적 데이터 설계
+  - 컴포넌트 기반의 UI 재사용성 극대화
 
 ---
 
-## 🛠 Tech Stack
+## 2. Tech Stack
 
-### 🔹 Backend
+### Backend
 - **Framework**: Spring Boot 3.x
 - **Language**: Java 17
 - **Database**: Oracle DB
 - **ORM**: Spring Data JPA & Querydsl
-- **Convention**: 레거시 DB 호환을 위해 모든 Entity의 Column Name은 **UPPERCASE** 매핑
+- **Convention**: Entity 매핑 시 모든 Column Name은 UPPERCASE 사용
 
-### 🔹 Frontend
-- **Library**: React (Build by Vite)
+### Frontend
+- **Library**: React (Vite 기반)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
-- **Convention**: 모든 함수형 컴포넌트는 **Arrow Function (`const App = () => {}`)** 스타일 준수
+- **Convention**: 함수형 컴포넌트 작성 시 Arrow Function 스타일 준수
 
 ---
 
-## 🏗 Roadmap & Key Steps
+## 3. Development Roadmap
 
-### Step 1. Backend Advancement (Spring Boot 3 + Oracle)
-- [ ] **JPA Integration**: 반복적인 SQL 매핑(MyBatis) 대신 JPA를 도입하여 비즈니스 로직에 집중
-- [ ] **Strict Naming Strategy**: `@Column(name = "USER_ID")` 처럼 대문자 컬럼명을 명시적으로 매핑
-- [ ] **Querydsl**: 복잡한 사내 통계나 조회 쿼리를 자바 코드로 안전하게 구현하는 연습
+### Phase 1: Backend Advancement (Spring Boot & Oracle)
+- MyBatis의 SQL 매핑 구조를 JPA로 전환하여 생산성 향상
+- @Column 어노테이션을 활용한 대문자 기반 DB 명명 규칙 엄격 준수
+- Querydsl을 도입하여 타입 안정성이 보장된 동적 쿼리 구현
 
-### Step 2. Frontend Modernization (React + TS + Vite)
-- [ ] **Vite Setup**: Webpack 대비 압도적으로 빠른 개발 환경 구축
-- [ ] **Strict Typing**: API 통신 데이터(DTO)에 인터페이스를 적용하여 프론트-백엔드 간 데이터 무결성 확보
-- [ ] **Component Architecture**: XPlatform의 제약에서 벗어나 자유롭고 체계적인 UI 컴포넌트화
-
----
-
-## 📝 Learning Rules
-1. **DB First**: 테이블 설계 및 컬럼 정의 시 항상 **대문자**를 우선 사용한다.
-2. **Modern Syntax**: Java 17 및 ES6+ 최신 문법을 적극 활용하여 코드의 가독성을 높인다.
-3. **Clean Code**: "미래의 나" 혹은 "동료 개발자"가 읽기 쉬운 코드를 지향한다.
+### Phase 2: Frontend Modernization (React & TS)
+- Vite를 활용한 최적화된 개발 및 빌드 환경 구축
+- API 응답값 및 데이터 모델에 대한 엄격한 Type Definition 적용
+- 단위 컴포넌트화를 통한 화면 설계 및 비즈니스 로직 분리
 
 ---
 
-## 📂 Project Directory (TBD)
-*주제 선정 및 프로젝트 초기화 후 업데이트 예정*
+## 4. Development Principles
+1. **Naming**: 데이터베이스 관련 모든 명칭은 UPPERCASE를 원칙으로 함
+2. **Syntax**: Java 17 및 ES6+ 최신 문법을 적극 도입하여 가독성 유지
+3. **Architecture**: 프론트엔드와 백엔드의 역할을 명확히 분리한 RESTful API 지향
+
+---
+
+## 5. Directory Structure (TBD)
+- 상세 주제 선정 및 프로젝트 초기화 후 업데이트 예정
