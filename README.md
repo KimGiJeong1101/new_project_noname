@@ -1,54 +1,56 @@
-# Enterprise Web Modernization Project
+# 🚀 Enterprise Web Modernization Project
 
-실무 레거시 기술 스택의 한계를 보완하고, 생산성과 안정성이 높은 모던 풀스택 아키텍처를 연구하는 프로젝트입니다.
-
-## 1. Project Overview
-- **배경**: JSP, MyBatis, XPlatform 기반 환경의 유지보수 제약을 최신 기술로 해결하고자 함
-- **목표**: Spring Boot 3와 React(TS)를 활용한 기업용 시스템 리뉴얼 프로토타입 구축
-- **핵심 가치**: 
-  - TypeScript를 통한 타입 안정성 확보
-  - JPA 기반의 객체 지향적 데이터 설계
-  - 컴포넌트 기반의 UI 재사용성 극대화
+이 프로젝트는 기존의 오래된 기술 스택이 가진 한계를 극복하고, 더 빠르고 안정적인 최신 개발 방식(Modern Full-stack)을 연구하는 프로젝트입니다.
 
 ---
 
-## 2. Tech Stack
+## 1. 프로젝트 개요 (Project Overview)
+- **배경**: 오래된 기술(JSP, MyBatis, XPlatform)로 인해 화면 수정이나 기능 추가가 어려웠던 점을 최신 기술로 해결하고자 합니다.
+- **목표**: 최신 자바(Spring Boot 3)와 화면 개발 도구(React)를 사용하여, 실제 기업에서 바로 쓸 수 있는 깔끔한 시스템 본보기를 만듭니다.
+- **핵심 가치**:
+  - **데이터 안정성**: TypeScript를 사용해 코드를 짤 때 데이터 타입을 미리 정해두고 실수를 방지합니다.
+  - **효율적인 설계**: SQL을 일일이 작성하는 대신, 자바 객체 중심으로 데이터를 관리해 개발 속도를 높입니다.
+  - **화면 부품화**: 자주 쓰는 화면 요소를 부품(Component)처럼 만들어 필요할 때마다 재사용합니다.
 
-### Backend
+---
+
+## 2. 사용 기술 (Tech Stack)
+
+### 🖥️ Backend (서버)
 - **Framework**: Spring Boot 3.x
 - **Language**: Java 17
 - **Database**: Oracle DB
-- **ORM**: Spring Data JPA & Querydsl
-- **Convention**: Entity 매핑 시 모든 Column Name은 UPPERCASE 사용
+- **Data Tool**: Spring Data JPA & Querydsl
+- **Convention**: 데이터베이스 테이블 매핑 시 모든 **COLUMN NAME은 UPPERCASE(대문자)**를 사용합니다.
 
-### Frontend
+### 🎨 Frontend (사용자 화면)
 - **Library**: React (Vite 기반)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
-- **Convention**: 함수형 컴포넌트 작성 시 Arrow Function 스타일 준수
+- **Convention**: 함수형 컴포넌트 작성 시 화살표 함수(`const App = () => {}`) 스타일을 사용합니다.
 
 ---
 
-## 3. Development Roadmap
+## 3. 개발 로드맵 (Roadmap)
 
-### Phase 1: Backend Advancement (Spring Boot & Oracle)
-- MyBatis의 SQL 매핑 구조를 JPA로 전환하여 생산성 향상
-- @Column 어노테이션을 활용한 대문자 기반 DB 명명 규칙 엄격 준수
-- Querydsl을 도입하여 타입 안정성이 보장된 동적 쿼리 구현
+### Phase 1: 서버 고도화 (Spring Boot & Oracle)
+- 복잡한 SQL문을 직접 관리하는 방식에서 자바 코드로 데이터를 다루는 방식(JPA)으로 전환하여 생산성을 높입니다.
+- 데이터베이스 관련 명칭은 대문자 사용 규칙을 엄격하게 준수합니다.
+- 복잡한 검색 기능을 만들 때, 오타가 나지 않도록 안전한 도구(Querydsl)를 도입합니다.
 
-### Phase 2: Frontend Modernization (React & TS)
-- Vite를 활용한 최적화된 개발 및 빌드 환경 구축
-- API 응답값 및 데이터 모델에 대한 엄격한 Type Definition 적용
-- 단위 컴포넌트화를 통한 화면 설계 및 비즈니스 로직 분리
-
----
-
-## 4. Development Principles
-1. **Naming**: 데이터베이스 관련 모든 명칭은 UPPERCASE를 원칙으로 함
-2. **Syntax**: Java 17 및 ES6+ 최신 문법을 적극 도입하여 가독성 유지
-3. **Architecture**: 프론트엔드와 백엔드의 역할을 명확히 분리한 RESTful API 지향
+### Phase 2: 화면 현대화 (React & TS)
+- 화면이 빠르게 로딩되고 개발하기 편리한 최신 환경(Vite)을 구축합니다.
+- 서버와 주고받는 데이터가 어떤 모양인지 미리 정의하여 데이터 관련 에러를 사전에 차단합니다.
+- 화면 디자인과 비즈니스 로직을 분리하여 관리하기 쉬운 구조를 만듭니다.
 
 ---
 
-## 5. Directory Structure (TBD)
-- 상세 주제 선정 및 프로젝트 초기화 후 업데이트 예정
+## 4. 개발 원칙 (Development Principles)
+1. **Naming**: 데이터베이스와 관련된 모든 명칭은 **UPPERCASE(대문자)** 사용을 원칙으로 합니다.
+2. **Syntax**: 최신 버전의 자바(Java 17)와 자바스크립트(ES6+) 문법을 적극 사용하여 읽기 좋은 코드를 작성합니다.
+3. **Architecture**: 사용자 화면(Frontend)과 서버 데이터 처리(Backend)의 역할을 명확히 구분한 RESTful API 구조를 지향합니다.
+
+---
+
+## 5. 폴더 구조 (Directory Structure)
+- 상세 주제 선정 및 프로젝트 초기화 후 업데이트 예정입니다.
